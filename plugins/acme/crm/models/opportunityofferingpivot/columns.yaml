@@ -1,0 +1,21 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: name
+        searchable: true
+
+    pivot[price]:
+        label: Price
+        width: 150px
+
+    pivot[cost]:
+        label: Cost
+        width: 150px
+
+    pivot[owner][first_name]:
+        label: Assigned to
+        width: 250px
+        # select: first_name

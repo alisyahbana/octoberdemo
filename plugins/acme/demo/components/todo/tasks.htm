@@ -1,0 +1,15 @@
+{% for task in tasks %}
+		        
+     <li class="list-group-item">
+        	{{ task.title }}
+         	<button class="close pull-right" 
+         	data-request="onDelete"
+         	data-request-confirm="Are you sure?"
+         	data-request-data="id: {{ task.id }}"
+            data-request-update="'{{__SELF__}}::tasks': '#result'"
+           
+         	 >&times;</button>
+     </li>
+		            
+{% endfor %}
+
